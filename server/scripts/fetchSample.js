@@ -15,7 +15,7 @@ const res = await fetch('https://places.googleapis.com/v1/places:searchText', {
     'X-Goog-Api-Key': process.env.GOOGLE_PLACES_API_KEY,
     'X-Goog-FieldMask': FIELDS,
   },
-  body: JSON.stringify({ textQuery: 'hair salons in Toronto', pageSize: 20 }),
+  body: JSON.stringify({ textQuery: 'hair salons in Montreal', pageSize: 20 }),
 });
 
 const data = await res.json();
